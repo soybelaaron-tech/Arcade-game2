@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Space Arcade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <header class="game-header">
+      <h1>Space Arcade</h1>
+      <div class="controls-panel">
+        <h2>Controls</h2>
+        <ul>
+          <li><span>← →</span> Move Left / Right</li>
+          <li><span>↑ ↓</span> Move Up / Down</li>
+          <li><span>Space</span> Shoot</li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="game-main">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+      <div class="hud">
+        <div class="hud-item">Score: <span id="score">0</span></div>
+        <div class="hud-item">Lives: <span id="lives">3</span></div>
+      </div>
+    </main>
+
+    <footer class="game-footer">
+      <button id="restartBtn">Restart</button>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
